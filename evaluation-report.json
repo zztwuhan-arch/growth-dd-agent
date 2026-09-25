@@ -1,0 +1,58 @@
+{
+  "scope": "12 synthetic regression cases; rule consistency, not real-world accuracy",
+  "micro_precision": 1.0,
+  "micro_recall": 1.0,
+  "true_positive": 9,
+  "false_positive": 0,
+  "false_negative": 0,
+  "cases": [
+    {
+      "id": "growth_multi",
+      "match": true
+    },
+    {
+      "id": "growth_normal",
+      "match": true
+    },
+    {
+      "id": "early_runway",
+      "match": true
+    },
+    {
+      "id": "early_healthy",
+      "match": true
+    },
+    {
+      "id": "mature_cash",
+      "match": true
+    },
+    {
+      "id": "mature_normal",
+      "match": true
+    },
+    {
+      "id": "zero_bases",
+      "match": true
+    },
+    {
+      "id": "loss",
+      "match": true
+    },
+    {
+      "id": "concentration_only",
+      "match": true
+    },
+    {
+      "id": "margin_only",
+      "match": true
+    },
+    {
+      "id": "no_burn",
+      "match": true
+    },
+    {
+      "id": "negative_cash",
+      "match": true
+    }
+  ]
+}

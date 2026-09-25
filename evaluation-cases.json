@@ -1,0 +1,257 @@
+[
+  {
+    "id": "growth_multi",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 500,
+      "net_profit": 100,
+      "operating_cashflow": -50,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.28,
+      "top5_customer_share": 0.72,
+      "period_months": 12
+    },
+    "expected": [
+      "AR_GAP",
+      "CASH_PROFIT",
+      "CONCENTRATION",
+      "MARGIN"
+    ]
+  },
+  {
+    "id": "growth_normal",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": []
+  },
+  {
+    "id": "early_runway",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "early",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": [
+      "RUNWAY"
+    ]
+  },
+  {
+    "id": "early_healthy",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "early",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 500,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": []
+  },
+  {
+    "id": "mature_cash",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "mature",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 70,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": [
+      "CASH_PROFIT"
+    ]
+  },
+  {
+    "id": "mature_normal",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "mature",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": []
+  },
+  {
+    "id": "zero_bases",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 0,
+      "revenue": 1400,
+      "receivables_previous": 0,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": []
+  },
+  {
+    "id": "loss",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": -50,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": []
+  },
+  {
+    "id": "concentration_only",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.9,
+      "period_months": 12
+    },
+    "expected": [
+      "CONCENTRATION"
+    ]
+  },
+  {
+    "id": "margin_only",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.2,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": [
+      "MARGIN"
+    ]
+  },
+  {
+    "id": "no_burn",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "early",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": 110,
+      "cash": 300,
+      "monthly_burn": 0,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": []
+  },
+  {
+    "id": "negative_cash",
+    "input": {
+      "company": "合成示例：星河设备",
+      "stage": "growth",
+      "revenue_previous": 1000,
+      "revenue": 1400,
+      "receivables_previous": 200,
+      "receivables": 250,
+      "net_profit": 100,
+      "operating_cashflow": -10,
+      "cash": 300,
+      "monthly_burn": 30,
+      "gross_margin_previous": 0.4,
+      "gross_margin": 0.39,
+      "top5_customer_share": 0.4,
+      "period_months": 12
+    },
+    "expected": [
+      "CASH_PROFIT"
+    ]
+  }
+]
